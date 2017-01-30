@@ -50,6 +50,7 @@ int main () {
             cout << "Inserisci cognome studente: " << endl;
             cin >> cognome_studente;
             Studente studente(nome_studente, cognome_studente,i);
+            // Questa riga non va bene perché si cerca di accedere ad un campo privato. MODIFICARE!!!!
             s.studenti[j] = studente;
             j++;
             cout << "Vuoi continuare? (s/n): " << endl;
